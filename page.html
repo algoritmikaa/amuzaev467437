@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — Музаева</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">Музаева</a>
+            <nav class="nav" id="navMenu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="about.html" class="nav__link">О нас</a></li>
+                    <li><a href="page.html" class="nav__link active">Каталог</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Переключить тему">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="burger" id="burgerBtn" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog">
+            <div class="container">
+                <h1 class="catalog__title fade-in">Каталог мебели</h1>
+                <p class="catalog__subtitle fade-in">Изысканные решения для вашего интерьера</p>
+
+                <div class="filter fade-in">
+                    <button class="filter__btn active" data-filter="all">Все</button>
+                    <button class="filter__btn" data-filter="livingroom">Гостиная</button>
+                    <button class="filter__btn" data-filter="bedroom">Спальня</button>
+                    <button class="filter__btn" data-filter="office">Кабинет</button>
+                </div>
+
+                <div class="catalog__grid">
+                    <!-- Существующие товары с обновлёнными изображениями -->
+                    <div class="product-card fade-in" data-category="livingroom"
+                         data-name="Диван «Амелия»"
+                         data-description="Элегантный диван с бархатной обивкой и резными подлокотниками. Итальянский каркас из массива бука."
+                         data-materials="Массив бука, бархат, пенополиуретан высокой плотности, резные элементы из дуба."
+                         data-price="245 000 ₽"
+                         data-image="https://elsinor.ru/upload/resize_cache/iblock/7a3/1024_759_0/c5qbq3f2h6lr5z7qpz8vu3mqd0eoxudy.jpg">
+                        <div class="product-card__image">
+                            <img src="https://elsinor.ru/upload/resize_cache/iblock/7a3/1024_759_0/c5qbq3f2h6lr5z7qpz8vu3mqd0eoxudy.jpg" alt="Диван Амелия">
+                            <div class="product-card__overlay"><span>Подробнее</span></div>
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Диван «Амелия»</h3>
+                            <p>Бархатная обивка, резные элементы, итальянский каркас.</p>
+                            <span class="price">245 000 ₽</span>
+                            <button class="btn btn--small">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="product-card fade-in" data-category="bedroom"
+                         data-name="Кровать «Леонардо»"
+                         data-description="Кровать с высокой спинкой и каретной стяжкой. Массив дуба, филёнки ручной работы."
+                         data-materials="Массив дуба, велюр, гипоаллергенный наполнитель, каретная стяжка."
+                         data-price="198 000 ₽"
+                         data-image="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&h=400&fit=crop">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&h=400&fit=crop" alt="Кровать Леонардо">
+                            <div class="product-card__overlay"><span>Подробнее</span></div>
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Кровать «Леонардо»</h3>
+                            <p>Массив дуба, высокая спинка с каретной стяжкой.</p>
+                            <span class="price">198 000 ₽</span>
+                            <button class="btn btn--small">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="product-card fade-in" data-category="livingroom"
+                         data-name="Стол «Версаль»"
+                         data-description="Обеденный стол из массива дуба с патиной золота. Ручная резьба по периметру."
+                         data-materials="Массив дуба, патина золотом, тонировка, лаковое покрытие."
+                         data-price="320 000 ₽"
+                         data-image="https://meb-elite.ru/upload/resize_cache/iblock/bc2/1163_643_1b6851af457baf4401ca156da7ecb4e3f/Versal-stolovaya.jpg">
+                        <div class="product-card__image">
+                            <img src="https://meb-elite.ru/upload/resize_cache/iblock/bc2/1163_643_1b6851af457baf4401ca156da7ecb4e3f/Versal-stolovaya.jpg" alt="Стол Версаль">
+                            <div class="product-card__overlay"><span>Подробнее</span></div>
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Стол «Версаль»</h3>
+                            <p>Обеденный стол из массива с патиной золота.</p>
+                            <span class="price">320 000 ₽</span>
+                            <button class="btn btn--small">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="product-card fade-in" data-category="bedroom"
+                         data-name="Шкаф «Верона»"
+                         data-description="Вместительный шкаф-купе с зеркальными фасадами и внутренней подсветкой."
+                         data-materials="ЛДСП Egger, зеркала с фацетом, алюминиевый профиль, светодиодная подсветка."
+                         data-price="275 000 ₽"
+                         data-image="https://uno-mebel.ru/image/cache/catalog/products/Verona/shkaf-verona-22-1m%286%29-auto_width_1000.jpeg">
+                        <div class="product-card__image">
+                            <img src="https://uno-mebel.ru/image/cache/catalog/products/Verona/shkaf-verona-22-1m%286%29-auto_width_1000.jpeg" alt="Шкаф Верона">
+                            <div class="product-card__overlay"><span>Подробнее</span></div>
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Шкаф «Верона»</h3>
+                            <p>Вместительный шкаф-купе с зеркальными фасадами.</p>
+                            <span class="price">275 000 ₽</span>
+                            <button class="btn btn--small">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="product-card fade-in" data-category="livingroom"
+                         data-name="Кресло «Честер»"
+                         data-description="Классическое кожаное кресло с глубокой прострочкой и подлокотниками-свитками."
+                         data-materials="Натуральная кожа, массив сосны, пружинный блок, наполнитель из конского волоса."
+                         data-price="135 000 ₽"
+                         data-image="https://www.angelcerda.com/images/A_5167_A1.jpg">
+                        <div class="product-card__image">
+                            <img src="https://www.angelcerda.com/images/A_5167_A1.jpg" alt="Кресло Честер">
+                            <div class="product-card__overlay"><span>Подробнее</span></div>
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Кресло «Честер»</h3>
+                            <p>Классическое кожаное кресло с глубокой прострочкой.</p>
+                            <span class="price">135 000 ₽</span>
+                            <button class="btn btn--small">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="product-card fade-in" data-category="office"
+                         data-name="Тумба «Медичи»"
+                         data-description="Прикроватная тумба с тремя ящиками и мраморной столешницей."
+                         data-materials="Массив ореха, мрамор, латунные ручки, направляющие Blum."
+                         data-price="89 000 ₽"
+                         data-image="https://lh3.googleusercontent.com/proxy/mUjqOmqp1_HyMUiOAItK3OTHrUMVoU8tOCKeUXaa5UlRsK3yBjS5VjsTCDfRBcVG2fXPY_0BvigPwIDhHT_d1mQpyc8aCWk">
+                        <div class="product-card__image">
+                            <img src="https://lh3.googleusercontent.com/proxy/mUjqOmqp1_HyMUiOAItK3OTHrUMVoU8tOCKeUXaa5UlRsK3yBjS5VjsTCDfRBcVG2fXPY_0BvigPwIDhHT_d1mQpyc8aCWk" alt="Тумба Медичи">
+                            <div class="product-card__overlay"><span>Подробнее</span></div>
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Тумба «Медичи»</h3>
+                            <p>Прикроватная тумба с ящиками и мраморной столешницей.</p>
+                            <span class="price">89 000 ₽</span>
+                            <button class="btn btn--small">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="product-card fade-in" data-category="livingroom"
+                         data-name="Журнальный столик «Эстель»"
+                         data-description="Столик из закалённого стекла на латунном каркасе с геометрическим узором."
+                         data-materials="Закалённое стекло 10 мм, латунь, защитное покрытие."
+                         data-price="65 000 ₽"
+                         data-image="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=600&h=400&fit=crop">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=600&h=400&fit=crop" alt="Журнальный столик Эстель">
+                            <div class="product-card__overlay"><span>Подробнее</span></div>
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Столик «Эстель»</h3>
+                            <p>Журнальный столик из стекла и латуни.</p>
+                            <span class="price">65 000 ₽</span>
+                            <button class="btn btn--small">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="product-card fade-in" data-category="office"
+                         data-name="Комод «Барокко»"
+                         data-description="Изысканный комод с ручной росписью и шестью выдвижными ящиками."
+                         data-materials="Массив липы, художественная роспись, лак, латунные ручки."
+                         data-price="155 000 ₽"
+                         data-image="https://modamebeli.ru/upload/iblock/99d/trcqsl535pp9rc0w3pzn5387e8wqaikz/1%20(13)%20(1).jpg">
+                        <div class="product-card__image">
+                            <img src="https://modamebeli.ru/upload/iblock/99d/trcqsl535pp9rc0w3pzn5387e8wqaikz/1%20(13)%20(1).jpg" alt="Комод Барокко">
+                            <div class="product-card__overlay"><span>Подробнее</span></div>
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Комод «Барокко»</h3>
+                            <p>Изысканный комод с ручной росписью.</p>
+                            <span class="price">155 000 ₽</span>
+                            <button class="btn btn--small">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="product-card fade-in" data-category="office"
+                         data-name="Стеллаж «Монблан»"
+                         data-description="Открытый стеллаж из массива ореха с регулируемыми полками."
+                         data-materials="Массив американского ореха, стальные кронштейны, масляная пропитка."
+                         data-price="112 000 ₽"
+                         data-image="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=600&h=400&fit=crop">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=600&h=400&fit=crop" alt="Стеллаж Монблан">
+                            <div class="product-card__overlay"><span>Подробнее</span></div>
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Стеллаж «Монблан»</h3>
+                            <p>Открытый стеллаж из массива ореха.</p>
+                            <span class="price">112 000 ₽</span>
+                            <button class="btn btn--small">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="product-card fade-in" data-category="bedroom"
+                         data-name="Банкетка «Лилия»"
+                         data-description="Элегантная банкетка с каретной стяжкой и деревянными ножками."
+                         data-materials="Массив бука, велюр, пенополиуретан, каретная стяжка."
+                         data-price="58 000 ₽"
+                         data-image="https://belmebel.ru/img/catalog/a5c825b9_9008_11ed_8108_a85e453e5b28.jpg">
+                        <div class="product-card__image">
+                            <img src="https://belmebel.ru/img/catalog/a5c825b9_9008_11ed_8108_a85e453e5b28.jpg" alt="Банкетка Лилия">
+                            <div class="product-card__overlay"><span>Подробнее</span></div>
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Банкетка «Лилия»</h3>
+                            <p>Элегантная банкетка с каретной стяжкой.</p>
+                            <span class="price">58 000 ₽</span>
+                            <button class="btn btn--small">Заказать</button>
+                        </div>
+                    </div>
+                    <!-- Новые товары -->
+                    <div class="product-card fade-in" data-category="office"
+                         data-name="Кресло-массажер «Релакс»"
+                         data-description="Комфортное кресло с функцией массажа и подогревом. Идеально для отдыха после трудового дня."
+                         data-materials="Экокожа, металлокаркас, вибромассажеры, пульт управления, подогрев."
+                         data-price="175 000 ₽"
+                         data-image="https://mizomed.ru/_next/image/?url=https%3A%2F%2Fmizomed.ru%2Fupload%2Fiblock%2F83e%2Ffyys1ehbnqoce8lbxldx30lmiyefmn6n%2F1777273114b210.png&w=1200&q=75">
+                        <div class="product-card__image">
+                            <img src="https://mizomed.ru/_next/image/?url=https%3A%2F%2Fmizomed.ru%2Fupload%2Fiblock%2F83e%2Ffyys1ehbnqoce8lbxldx30lmiyefmn6n%2F1777273114b210.png&w=1200&q=75" alt="Кресло-массажер Релакс">
+                            <div class="product-card__overlay"><span>Подробнее</span></div>
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Кресло-массажер «Релакс»</h3>
+                            <p>Массажное кресло с подогревом и пультом управления.</p>
+                            <span class="price">175 000 ₽</span>
+                            <button class="btn btn--small">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="product-card fade-in" data-category="livingroom"
+                         data-name="Диван «Роксвелл»"
+                         data-description="Прямой раскладной диван с механизмом трансформации и вместительным ящиком для белья."
+                         data-materials="Массив сосны, велюр, пенополиуретан, металлический механизм трансформации."
+                         data-price="210 000 ₽"
+                         data-image="https://vobox.ru/upload/resize_cache/iblock/9a4/ibtm4a1edy5d0zip23d5bepw8evi4dh4/500_500_1/pryamoy_raskladnoy_divan_roxvell_archi_1900.jpg">
+                        <div class="product-card__image">
+                            <img src="https://vobox.ru/upload/resize_cache/iblock/9a4/ibtm4a1edy5d0zip23d5bepw8evi4dh4/500_500_1/pryamoy_raskladnoy_divan_roxvell_archi_1900.jpg" alt="Диван Роксвелл">
+                            <div class="product-card__overlay"><span>Подробнее</span></div>
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Диван «Роксвелл»</h3>
+                            <p>Раскладной диван с ящиком для белья.</p>
+                            <span class="price">210 000 ₽</span>
+                            <button class="btn btn--small">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__col">
+                <a href="index.html" class="logo logo--footer">Музаева</a>
+                <p>Создаём изысканную мебель, которая становится сердцем вашего интерьера.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="page.html">Каталог</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Контакты</h4>
+                <p><i class="fas fa-map-marker-alt"></i> с. Беркат-Юрт, Грозненский район, Чеченская Республика</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+79288882228">+7 (928) 888-22-28</a></p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">&copy; 2025 Музаева. Все права защищены.</div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно товара -->
+    <div class="modal" id="productModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <div class="modal__image">
+                <img src="" alt="">
+            </div>
+            <div class="modal__info">
+                <h2 class="modal__title"></h2>
+                <p class="modal__description"></p>
+                <p class="modal__materials"><strong>Состав:</strong> <span></span></p>
+                <p class="modal__price"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') body.classList.add('dark-theme');
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
+        });
+
+        // Burger menu
+        document.getElementById('burgerBtn').addEventListener('click', () => {
+            document.getElementById('navMenu').classList.toggle('active');
+        });
+
+        // Scroll animations
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        fadeElements.forEach(el => observer.observe(el));
+
+        // Filter
+        const filterBtns = document.querySelectorAll('.filter__btn');
+        const cards = document.querySelectorAll('.product-card');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filterValue = btn.dataset.filter;
+                cards.forEach(card => {
+                    if (filterValue === 'all' || card.dataset.category === filterValue) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Modal
+        const modal = document.getElementById('productModal');
+        const modalImg = modal.querySelector('.modal__image img');
+        const modalTitle = modal.querySelector('.modal__title');
+        const modalDesc = modal.querySelector('.modal__description');
+        const modalMater = modal.querySelector('.modal__materials span');
+        const modalPrice = modal.querySelector('.modal__price');
+        const modalClose = modal.querySelector('.modal__close');
+        const modalOverlay = modal.querySelector('.modal__overlay');
+
+        function openModal(card) {
+            const name = card.dataset.name;
+            const desc = card.dataset.description;
+            const materials = card.dataset.materials;
+            const price = card.dataset.price;
+            const image = card.dataset.image;
+            modalImg.src = image;
+            modalImg.alt = name;
+            modalTitle.textContent = name;
+            modalDesc.textContent = desc;
+            modalMater.textContent = materials;
+            modalPrice.textContent = price;
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+        }
+
+        modalClose.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', closeModal);
+
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+                openModal(this);
+            });
+        });
+    </script>
+</body>
+</html>
