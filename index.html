@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музаева — Мебель премиум-класса</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">Музаева</a>
+            <nav class="nav" id="navMenu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link active">Главная</a></li>
+                    <li><a href="about.html" class="nav__link">О нас</a></li>
+                    <li><a href="page.html" class="nav__link">Каталог</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Переключить тему">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="burger" id="burgerBtn" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&h=1080&fit=crop');">
+            <div class="hero__overlay"></div>
+            <div class="hero__content container">
+                <h1 class="hero__title fade-in">Мебель премиум-класса от Музаевой</h1>
+                <p class="hero__subtitle fade-in">Создаём уют в вашем доме с 2010 года</p>
+                <a href="page.html" class="btn hero__btn fade-in">Смотреть каталог</a>
+            </div>
+        </section>
+
+        <!-- Популярные товары -->
+        <section class="section popular">
+            <div class="container">
+                <h2 class="section__title fade-in">Популярные товары</h2>
+                <div class="popular__grid">
+                    <div class="product-card fade-in"
+                         data-name="Диван «Амелия»"
+                         data-description="Элегантный диван с бархатной обивкой и резными подлокотниками. Итальянский каркас из массива бука."
+                         data-materials="Массив бука, бархат, пенополиуретан высокой плотности, резные элементы из дуба."
+                         data-price="245 000 ₽"
+                         data-image="https://elsinor.ru/upload/resize_cache/iblock/7a3/1024_759_0/c5qbq3f2h6lr5z7qpz8vu3mqd0eoxudy.jpg">
+                        <div class="product-card__image">
+                            <img src="https://elsinor.ru/upload/resize_cache/iblock/7a3/1024_759_0/c5qbq3f2h6lr5z7qpz8vu3mqd0eoxudy.jpg" alt="Диван Амелия">
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Диван «Амелия»</h3>
+                            <p>Элегантный диван с бархатной обивкой и резными подлокотниками.</p>
+                            <span class="price">245 000 ₽</span>
+                        </div>
+                    </div>
+                    <div class="product-card fade-in"
+                         data-name="Кровать «Леонардо»"
+                         data-description="Кровать с высокой спинкой и каретной стяжкой. Массив дуба, филёнки ручной работы."
+                         data-materials="Массив дуба, велюр, гипоаллергенный наполнитель, каретная стяжка."
+                         data-price="198 000 ₽"
+                         data-image="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&h=400&fit=crop">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&h=400&fit=crop" alt="Кровать Леонардо">
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Кровать «Леонардо»</h3>
+                            <p>Массив дерева, высокое изголовье с каретной стяжкой.</p>
+                            <span class="price">198 000 ₽</span>
+                        </div>
+                    </div>
+                    <div class="product-card fade-in"
+                         data-name="Стол «Версаль»"
+                         data-description="Обеденный стол из массива дуба с патиной золота. Ручная резьба по периметру."
+                         data-materials="Массив дуба, патина золотом, тонировка, лаковое покрытие."
+                         data-price="320 000 ₽"
+                         data-image="https://meb-elite.ru/upload/resize_cache/iblock/bc2/1163_643_1b6851af457baf4401ca156da7ecb4e3f/Versal-stolovaya.jpg">
+                        <div class="product-card__image">
+                            <img src="https://meb-elite.ru/upload/resize_cache/iblock/bc2/1163_643_1b6851af457baf4401ca156da7ecb4e3f/Versal-stolovaya.jpg" alt="Стол Версаль">
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Стол «Версаль»</h3>
+                            <p>Обеденный стол из массива дуба с патиной золота.</p>
+                            <span class="price">320 000 ₽</span>
+                        </div>
+                    </div>
+                    <div class="product-card fade-in"
+                         data-name="Кресло «Честер»"
+                         data-description="Классическое кожаное кресло с глубокой прострочкой и подлокотниками-свитками."
+                         data-materials="Натуральная кожа, массив сосны, пружинный блок, наполнитель из конского волоса."
+                         data-price="135 000 ₽"
+                         data-image="https://www.angelcerda.com/images/A_5167_A1.jpg">
+                        <div class="product-card__image">
+                            <img src="https://www.angelcerda.com/images/A_5167_A1.jpg" alt="Кресло Честер">
+                        </div>
+                        <div class="product-card__body">
+                            <h3>Кресло «Честер»</h3>
+                            <p>Классическое кожаное кресло с глубокой прострочкой.</p>
+                            <span class="price">135 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="section advantages">
+            <div class="container">
+                <h2 class="section__title fade-in">Почему выбирают нас</h2>
+                <div class="advantages__grid">
+                    <div class="advantage-card fade-in">
+                        <div class="advantage-card__icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h3>Эксклюзивный дизайн</h3>
+                        <p>Каждое изделие создаётся по индивидуальным эскизам с учётом ваших пожеланий.</p>
+                    </div>
+                    <div class="advantage-card fade-in">
+                        <div class="advantage-card__icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Эко-материалы</h3>
+                        <p>Используем только натуральное дерево, гипоаллергенные ткани и безопасные лаки.</p>
+                    </div>
+                    <div class="advantage-card fade-in">
+                        <div class="advantage-card__icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Доставка по всей России</h3>
+                        <p>Бережно доставим заказ в любую точку страны, сборка и установка включены.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Призыв к действию -->
+        <section class="cta" style="background-image: url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&h=600&fit=crop');">
+            <div class="cta__overlay"></div>
+            <div class="cta__content container">
+                <h2 class="fade-in">Посетите наш шоурум в Беркат-Юрте</h2>
+                <p class="fade-in">Убедитесь в качестве лично</p>
+                <a href="tel:+79288882228" class="btn cta__btn fade-in">Связаться с нами</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__col">
+                <a href="index.html" class="logo logo--footer">Музаева</a>
+                <p>Создаём изысканную мебель, которая становится сердцем вашего интерьера.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="page.html">Каталог</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Контакты</h4>
+                <p><i class="fas fa-map-marker-alt"></i> с. Беркат-Юрт, Грозненский район, Чеченская Республика</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+79288882228">+7 (928) 888-22-28</a></p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">&copy; 2025 Музаева. Все права защищены.</div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно товара -->
+    <div class="modal" id="productModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <div class="modal__image">
+                <img src="" alt="">
+            </div>
+            <div class="modal__info">
+                <h2 class="modal__title"></h2>
+                <p class="modal__description"></p>
+                <p class="modal__materials"><strong>Состав:</strong> <span></span></p>
+                <p class="modal__price"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Переключение темы
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') body.classList.add('dark-theme');
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
+        });
+
+        // Бургер-меню
+        document.getElementById('burgerBtn').addEventListener('click', () => {
+            document.getElementById('navMenu').classList.toggle('active');
+        });
+
+        // Плавное появление при скролле
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        fadeElements.forEach(el => observer.observe(el));
+
+        // Модальное окно товара
+        const modal = document.getElementById('productModal');
+        const modalImg = modal.querySelector('.modal__image img');
+        const modalTitle = modal.querySelector('.modal__title');
+        const modalDesc = modal.querySelector('.modal__description');
+        const modalMater = modal.querySelector('.modal__materials span');
+        const modalPrice = modal.querySelector('.modal__price');
+        const modalClose = modal.querySelector('.modal__close');
+        const modalOverlay = modal.querySelector('.modal__overlay');
+
+        function openModal(card) {
+            const name = card.dataset.name;
+            const desc = card.dataset.description;
+            const materials = card.dataset.materials;
+            const price = card.dataset.price;
+            const image = card.dataset.image;
+            modalImg.src = image;
+            modalImg.alt = name;
+            modalTitle.textContent = name;
+            modalDesc.textContent = desc;
+            modalMater.textContent = materials;
+            modalPrice.textContent = price;
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+        }
+
+        modalClose.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', closeModal);
+
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+                openModal(this);
+            });
+        });
+    </script>
+</body>
+</html>
