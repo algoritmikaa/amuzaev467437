@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас — Музаева</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">Музаева</a>
+            <nav class="nav" id="navMenu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="about.html" class="nav__link active">О нас</a></li>
+                    <li><a href="page.html" class="nav__link">Каталог</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Переключить тему">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="burger" id="burgerBtn" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&h=600&fit=crop');">
+            <div class="page-hero__overlay"></div>
+            <div class="container">
+                <h1 class="page-hero__title fade-in">О компании Музаева</h1>
+            </div>
+        </section>
+
+        <section class="section about-story">
+            <div class="container about-story__grid">
+                <div class="about-story__text fade-in">
+                    <h2>История бренда</h2>
+                    <p>Семейное дело, начавшееся в 2010 году в Грозненском районе, выросло в производство мебели премиум-класса. Мы сохраняем традиции ручной работы и гармонично вплетаем их в современные технологии. Индивидуальный подход к каждому клиенту — основа нашей философии.</p>
+                    <p>Сегодня мастерская «Музаева» известна далеко за пределами Чеченской Республики благодаря безупречному качеству и неповторимому стилю.</p>
+                </div>
+                <div class="about-story__image fade-in">
+                    <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=600&h=400&fit=crop" alt="Производство">
+                </div>
+            </div>
+        </section>
+
+        <section class="section about-mission">
+            <div class="container about-mission__grid">
+                <div class="about-mission__image fade-in">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&h=400&fit=crop" alt="Мастерская">
+                </div>
+                <div class="about-mission__text fade-in">
+                    <h2>Наша миссия</h2>
+                    <p>Мы создаём мебель, которая объединяет поколения. Каждое изделие — это сплав премиальных материалов, страсти к дизайну и уважения к дому. Натуральное дерево, итальянская фурнитура и текстиль премиум-класса делают нашу мебель не просто предметом интерьера, а частью семейной истории.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section team">
+            <div class="container">
+                <h2 class="section__title fade-in">Наша команда</h2>
+                <div class="team__grid">
+                    <div class="team-card fade-in">
+                        <div class="team-card__avatar" data-initials="РМ">РМ</div>
+                        <h3>Руслан Музаев</h3>
+                        <p>Основатель</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <div class="team-card__avatar" data-initials="АД">АД</div>
+                        <h3>Амина Даудова</h3>
+                        <p>Дизайнер</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <div class="team-card__avatar" data-initials="МИ">МИ</div>
+                        <h3>Магомед Исаев</h3>
+                        <p>Мастер</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contacts-block">
+            <div class="container contacts-block__inner">
+                <div class="fade-in">
+                    <h2>Контакты</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> с. Беркат-Юрт, Грозненский район, Чеченская Республика</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+79288882228">+7 (928) 888-22-28</a></p>
+                    <p>Ждём вас в нашем шоуруме ежедневно с 10:00 до 19:00</p>
+                </div>
+                <div class="contacts-block__map fade-in">
+                    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=45.55%2C43.20%2C45.75%2C43.30&layer=mapnik&marker=43.25%2C45.65" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__col">
+                <a href="index.html" class="logo logo--footer">Музаева</a>
+                <p>Создаём изысканную мебель, которая становится сердцем вашего интерьера.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="page.html">Каталог</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Контакты</h4>
+                <p><i class="fas fa-map-marker-alt"></i> с. Беркат-Юрт, Грозненский район, Чеченская Республика</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+79288882228">+7 (928) 888-22-28</a></p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">&copy; 2025 Музаева. Все права защищены.</div>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') body.classList.add('dark-theme');
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            localStorage.setItem('theme', body.classList.contains('dark-theme') ? 'dark' : 'light');
+        });
+        document.getElementById('burgerBtn').addEventListener('click', () => {
+            document.getElementById('navMenu').classList.toggle('active');
+        });
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        fadeElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
